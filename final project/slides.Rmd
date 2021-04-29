@@ -28,7 +28,7 @@ We designed two experiments to test the listeners recognition speed of CS items,
 
 --
   
-In this presentation, as recommended, the stimulous analysis for experiment 1 is included, while experiment 2 is exluded for the complexity of eye tracking data is beyond what we've covered in this course.  
+In this presentation, as recommended, the stimulous analysis for experiment 1 is included, while experiment 2 is excluded for the complexity of eye tracking data is beyond what we've covered in this course.  
 ---
 # **Methodology**
 
