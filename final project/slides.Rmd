@@ -67,7 +67,7 @@ All the the above mentioned variables are collapsed as one random variable: subj
 - Reaction time  
 
 --
-calculated from the onset of the target phrase
+calculated from the onset of the target phrase  
 4 types of sentences that contains different stimuli  
 type 1: naturally produced monolingual English sentence(16/participant)  
 type 2: naturally produced English-Spanish CS sentence(16/participant)  
