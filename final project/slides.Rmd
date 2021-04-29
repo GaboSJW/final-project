@@ -1,0 +1,126 @@
+---
+title: "Effect of withholding phonetics cues to English-Spanish Code-Switching "
+subtitle: "methodoloy, result prediction and data simulation"
+author: "Jiawei Shao"
+institute: "Rutgers University"
+output:
+  xaringan::moon_reader:
+    css: [default, rutgers, rutgers-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+---
+# **Summary of the study**
+
+--
+Code-switching (CS) is the linguistic phenomenon when more than one language is used in one utterance. Various studies have reported switch cost in the recognition, comprehension and production process. Bilinguals are able to make use of hints in the matrix language of an CS utterance to help themselves recognize and process the upcoming CS phrase. In this study, we are trying to examine whether Spanish heritage speakers can make use of acoustic cues to mitigate the recognition of upcoming CS items in Enlish-Spanish CS context.  
+
+--
+  
+We designed two experiments to test the listeners recognition speed of CS items, one reaction time experiment(listening and pressing button), another eye tracking experiment(listning and choosing corresponding item).  
+
+--
+  
+In this presentation, as recommended, the stimulous analysis for experiment 1 is included, while experiment 2 is exluded for the complexity of eye tracking data is beyond what we've covered in this course.  
+---
+# **Methodology**
+
+### Participants
+- Spanish heritage speakers
+- Advance learners of Spanish
+- self reported frequent codeswitcher 
+
+--
+
+### Procedure of Experiment 1  
+Participants will listen to CS stimuli, while looking at the image of a item(or a character) in the screen. When they hear the image mentioned in the audio stimuli, they should press the button as fast as they can.
+
+---
+# **Methodology**
+
+--
+### Data of participants
+
+--
+- Age
+- Sex
+- Year of learning Spanish
+- Language dominance
+- CS frequency in life
+- Spanish proficiency  
+
+--
+
+All the the above mentioned variables are collapsed as one random variable: subject.
+
+--
+### Data collected in the Experiment
+
+--
+- Reaction time  
+
+--
+calculated from the onset of the target phrase
+4 types of stimuli  
+type 1: naturally produced monolingual English sentence(16/participant)  
+type 2: naturally produced English-Spanish CS sentence(16/participant)  
+type 3: CS(EN)+CS(ES) hybrid English-Spanish CS sentence (16/participant)
+type 4: monolingual(EN)+CS(ES) hybrid English-Spanish CS sentence(16/participant)  
+
+---
+# **Prediction**
+
+--
+#### Prediction 1
+Listeners will spend more time to recognize the item in bilingual context than in monolingual context.  
+
+--
+### Prediction 2
+Listerns will not show much difference in RT when comparing RT2 and RT3, as the only variable changed is whether or not the sentences has gone throught the splice procedure.
+
+--
+### Prediction 3
+Listeners will spend more time to recognize the item in the monolingual(EN)+CS(ES) hybrid English-Spanish CS sentence than naturally produced CS sentences.
+
+
+---
+# **Data Tidy**
+
+### step 1
+Each subject will provide 64 data points:16 RT for each type of sentence.  
+We'll calculate the mean of each group of 16 RT of same sentence type.  
+
+### step 2
+We'll filter the data for each comparison that involved in each of the 3 predictions:  
+type 1 vs type 2  
+type 2 vs type 3  
+type 2 vs type 4  
+
+---
+# **Run tests and make plots**
+
+### step 1
+Import all the untidy data in one figure that contains jitter plot and box plot and observe the pattern that the plots show.The X axis is the type of sentences and y axis is RT.
+
+### step 2
+Import the tidy data by comparison pairs. As the experiment has various participants, each participant could have distinct inherent reaction speed, we are using GLMM including subject as a random variable. Both random slope and random intercept are taken into account.
+
+### step 3
+Repeat step 2 with the other 2 pairs of data.
+
+---
+# **Current state of the project**
+
+This project is part of a bigger research proposal for another course. As we don't have real data collected, data simulation is required for the test and analysis. 
+Currently we have determined the range and SD of language history information of the participants, as well as the range of experiment result data that will fit our prediction. 
+We are using package faux in R to generate simulated data.
+
+
+
