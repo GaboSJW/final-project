@@ -1,6 +1,6 @@
 ---
 title: "Effect of withholding phonetics cues to English-Spanish Code-Switching "
-subtitle: "methodoloy, result prediction and data simulation"
+subtitle: "methodoloy, result prediction and preparation for data simulation"
 author: "Jiawei Shao"
 institute: "Rutgers University"
 output:
