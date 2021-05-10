@@ -1,0 +1,30 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:data participants}Language information of the participants}
+
+\begin{tabular}{llllll}
+\toprule
+sub\_partcipants\_condition & \multicolumn{1}{c}{n} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{SD} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max}\\
+\midrule
+age & 40 & 20.30 & 1.96 & 15.45 & 24.20\\
+age\_acq & 40 & 4.18 & 2.72 & 0.11 & 10.85\\
+CSF & 40 & 5.82 & 0.82 & 3.37 & 7.40\\
+EN\_ES & 40 & 6.09 & 0.40 & 5.29 & 6.90\\
+LP & 40 & 5.23 & 0.66 & 3.63 & 6.60\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} age:age of the participant; age\_acq: age of acquisition of English; CSF: code-switching frequency, EN\_ES: use of either languages with family and friends, 0 means always in English, 7 means always in Spanish; LP:language proficiency in Spanish.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table*}
